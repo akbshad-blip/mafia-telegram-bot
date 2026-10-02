@@ -1,0 +1,75 @@
+services:
+  - type: web
+    name: mafia-telegram-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements-postgres.txt
+    startCommand: python main.py
+    healthCheckPath: /health
+    envVars:
+      - key: WEBHOOK_MODE
+        value: "true"
+      - key: DATABASE_URL
+        sync: false
+      - key: USER_BOT_TOKEN
+        sync: false
+      - key: ADMIN_BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: USER_BOT_USERNAME
+        sync: false
+      - key: CHANNEL_URL
+        sync: false
+      - key: CHANNEL_ID
+        sync: false
+      - key: ADMIN_CONTACT_URL
+        sync: false
+      - key: DEFAULT_LANGUAGE
+        value: ru
+      - key: MIN_PLAYERS
+        value: "5"
+      - key: MAX_PLAYERS
+        value: "40"
+      - key: READY_TIMEOUT
+        value: "60"
+      - key: NIGHT_TIMEOUT
+        value: "30"
+      - key: MAFIA_TIMEOUT
+        value: "120"
+      - key: DOCTOR_TIMEOUT
+        value: "60"
+      - key: COMMISSIONER_TIMEOUT
+        value: "60"
+      - key: DISCUSSION_TIMEOUT
+        value: "120"
+      - key: VOTING_TIMEOUT
+        value: "60"
+      - key: LAST_WORD_TIMEOUT
+        value: "30"
+      - key: EXTRA_TIME_SECONDS
+        value: "60"
+      - key: EXTRA_TIME_APPROVAL_PERCENT
+        value: "80"
+      - key: MAX_WARNINGS
+        value: "1"
+      - key: LOCK_GROUP
+        value: "true"
+      - key: DELETE_FORBIDDEN_MESSAGES
+        value: "true"
+      - key: DOCTOR_SELF_HEAL
+        value: "true"
+      - key: DOCTOR_REPEAT_TARGET
+        value: "false"
+      - key: REVEAL_ROLE_AFTER_DEATH
+        value: "false"
+      - key: ALLOW_SKIP_VOTE
+        value: "true"
+      - key: COMMISSIONER_SHOOT_FROM_NIGHT_2
+        value: "true"
+      - key: MAFIA_REQUIRE_MAJORITY
+        value: "true"
+      - key: TIE_REVOTE
+        value: "true"

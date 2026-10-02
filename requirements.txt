@@ -1,0 +1,5 @@
+python-telegram-bot==22.8
+SQLAlchemy==2.0.43
+aiosqlite==0.21.0
+python-dotenv==1.1.1
+greenlet>=3.2,<4

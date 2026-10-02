@@ -1,0 +1,31 @@
+MAFIA USER BOT — BOTFATHER COMMANDS
+
+start - Запустить бота
+menu - Открыть главное меню
+create - Создать игру в группе
+join - Войти в игру по коду
+invite - Получить код и ссылку приглашения
+lobby - Показать лобби группы
+profile - Мой профиль
+stats - Моя статистика
+rules - Правила игры
+support - Поддержка
+language - Изменить язык
+help - Помощь
+
+MAFIA ADMIN BOT — BOTFATHER COMMANDS
+
+start - Войти в админ-панель
+menu - Открыть админ-панель
+stats - Статистика
+users - Пользователи
+groups - Группы
+games - Игры
+support - Тикеты поддержки
+broadcast - Рассылка
+logs - Журналы
+system - Система
+health - Проверить состояние ботов и БД
+language - Язык панели
+logout - Завершить сессию
+help - Помощь администратора
